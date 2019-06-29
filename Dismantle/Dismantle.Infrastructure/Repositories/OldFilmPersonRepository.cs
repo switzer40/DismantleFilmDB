@@ -12,7 +12,7 @@ namespace Dismantle.Infrastructure.Repositories
     {
         private readonly IFilmRepository _filmRepository;
         private readonly IPersonRepository _personRepository;
-        public OldFilmPersonRepository(OldFilmContext context, IFilmRepository frepo, IPersonRepository prepo) : base(context, frepo, prepo)
+        public OldFilmPersonRepository(OldFilmContext context, IOldFilmRepository frepo, IOldPersonRepository prepo) : base(context, frepo, prepo)
         {            
         }
 

@@ -9,8 +9,7 @@ using System.Text;
 
 namespace Dismantle.Infrastructure.Repositories
 {
-    public class NewFilmRepository : FilmRepository
-    {
+    public class NewFilmRepository : FilmRepository, INewFilmRepository   {
         public NewFilmRepository(NewFilmContext context): base(context)
         {
         }       

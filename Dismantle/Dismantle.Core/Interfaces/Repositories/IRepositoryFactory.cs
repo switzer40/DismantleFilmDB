@@ -8,10 +8,10 @@ namespace Dismantle.Core.Interfaces.Repositories
     {
         IFilmPersonRepository NewFilmPersonRepository();
         IFilmPersonRepository OldFilmPersonRepository();
-        IFilmRepository NewFilmRepository();
-        IFilmRepository OldFilmRepository();
+        INewFilmRepository NewFilmRepository();
+        IOldFilmRepository OldFilmRepository();
         IMediumRepository NewMediumRepository();
         IMediumRepository OldMediumRepository();
-        IPersonRepository NewPersonRepository();
-        IPersonRepository OldPersonRepository();        
+        INewPersonRepository NewPersonRepository();
+        IOldPersonRepository OldPersonRepository();
     }}

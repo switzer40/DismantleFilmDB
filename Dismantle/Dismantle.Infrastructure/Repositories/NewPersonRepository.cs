@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Dismantle.Infrastructure.Repositories
 {
-    public class NewPersonRepository : PersonRepository
+    public class NewPersonRepository : PersonRepository, INewPersonRepository
     {
         public NewPersonRepository(PersonContext context) : base(context)
         {

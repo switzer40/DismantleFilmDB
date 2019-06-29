@@ -50,9 +50,15 @@ namespace Dismantel.Web
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddTransient<IRepositoryFactory, RepositoryFactory>();
+            services.AddTransient<INewFilmRepository, NewFilmRepository>();
+            services.AddTransient<IOldFilmRepository, OldFilmRepository>();
+            services.AddTransient<INewPersonRepository, NewPersonRepository>();
+            services.AddTransient<IOldPersonRepository, OldPersonRepository>();
             services.AddTransient<IExtractorFactory, ExtractorFactory>();
 
         }
+
+       
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

@@ -33,7 +33,7 @@ namespace Dismantle.Infrastructure.Repositories
             return new NewFilmPersonRepository(_filmPersonContext, NewFilmRepository(), NewPersonRepository());
         }
 
-        public IFilmRepository NewFilmRepository()
+        public INewFilmRepository NewFilmRepository()
         {
             return new NewFilmRepository(_newFilmContext);
         }
@@ -43,7 +43,7 @@ namespace Dismantle.Infrastructure.Repositories
             return new NewMediumRepository(_mediumContext, NewFilmRepository());
         }
 
-        public IPersonRepository NewPersonRepository()
+        public INewPersonRepository NewPersonRepository()
         {
             return new NewPersonRepository(_personContext);
         }
@@ -53,7 +53,7 @@ namespace Dismantle.Infrastructure.Repositories
             return new OldFilmPersonRepository(_oldFilmContext, OldFilmRepository(), OldPersonRepository());
         }
 
-        public IFilmRepository OldFilmRepository()
+        public IOldFilmRepository OldFilmRepository()
         {
             return new OldFilmRepository(_oldFilmContext);
         }
@@ -63,7 +63,7 @@ namespace Dismantle.Infrastructure.Repositories
             return new OldMediumRepository(_oldFilmContext, OldFilmRepository());
         }
 
-        public IPersonRepository OldPersonRepository()
+        public IOldPersonRepository OldPersonRepository()
         {
             return new OldPersonRepository(_oldFilmContext);
         }
